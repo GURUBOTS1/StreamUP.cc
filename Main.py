@@ -3,11 +3,10 @@ from pyrogram.types import Message
 import requests
 import os
 
-# CONFIGURATION
-API_ID = 2238786
-API_HASH = "e449d6cc630583d0b415b286eedb9192"
-BOT_TOKEN = "8166959120:AAElfMn54Fy_B7_ZdBcqEAdBfRvZUQW8-Tk"
-STREAMUP_API_KEY = "4bfc6545a07641511cab0f47128503ae"
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+STREAMUP_API_KEY = os.getenv("STREAMUP_API_KEY")
 
 app = Client("streamup_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
@@ -36,7 +35,6 @@ async def upload_file(client: Client, message: Message):
             )
 
         if response.ok:
-            # Now fetch the latest uploaded video link
             api_url = f"https://api.streamup.cc/v1/data?api_key={STREAMUP_API_KEY}&page=1"
             api_response = requests.get(api_url)
             data = api_response.json()
