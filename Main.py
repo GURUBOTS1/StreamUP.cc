@@ -4,10 +4,10 @@ import requests
 import os
 
 # CONFIGURATION
-API_ID = 15657755
-API_HASH = "7cce51d4664d010b90ad690e0d5121ad"
-BOT_TOKEN = "8196990860:AAEOqqDXcn1UcfEdYKnhyqrAxwj5ikVd9ls"
-STREAMUP_API_KEY = "6dc79ecc93c0862a38d20b4fe2c0cd2e"
+API_ID = 2238786
+API_HASH = "e449d6cc630583d0b415b286eedb9192"
+BOT_TOKEN = "8166959120:AAElfMn54Fy_B7_ZdBcqEAdBfRvZUQW8-Tk"
+STREAMUP_API_KEY = "4bfc6545a07641511cab0f47128503ae"
 
 app = Client("streamup_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
