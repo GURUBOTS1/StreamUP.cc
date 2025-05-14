@@ -29,7 +29,7 @@ async def upload_file(client: Client, message: Message):
                 "User-Agent": "Mozilla/5.0"
             }
             response = requests.post(
-                "https://e1.beymtv.com/upload.php?id=1254",
+                "https://e1.beymtv.com/upload.php?id=1252",
                 files=files,
                 headers=headers
             )
