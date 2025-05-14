@@ -16,7 +16,7 @@ run:
       value: "your_streamup_api_key"
 
 ports:
-  - port: 8000
+  - port: 8080
     http_options:
       enabled: false
       
